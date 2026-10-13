@@ -47,8 +47,16 @@
   - ```{autodoc2-docstring} src.policies.route_construction.exact_and_decomposition_solvers.smart_waste_collection_two_commodity_flow.gurobi._optional_float
     :summary:
     ```
+* - {py:obj}`_copy_depot_distance <src.policies.route_construction.exact_and_decomposition_solvers.smart_waste_collection_two_commodity_flow.gurobi._copy_depot_distance>`
+  - ```{autodoc2-docstring} src.policies.route_construction.exact_and_decomposition_solvers.smart_waste_collection_two_commodity_flow.gurobi._copy_depot_distance
+    :summary:
+    ```
 * - {py:obj}`_build_paper <src.policies.route_construction.exact_and_decomposition_solvers.smart_waste_collection_two_commodity_flow.gurobi._build_paper>`
   - ```{autodoc2-docstring} src.policies.route_construction.exact_and_decomposition_solvers.smart_waste_collection_two_commodity_flow.gurobi._build_paper
+    :summary:
+    ```
+* - {py:obj}`_build_asymmetric <src.policies.route_construction.exact_and_decomposition_solvers.smart_waste_collection_two_commodity_flow.gurobi._build_asymmetric>`
+  - ```{autodoc2-docstring} src.policies.route_construction.exact_and_decomposition_solvers.smart_waste_collection_two_commodity_flow.gurobi._build_asymmetric
     :summary:
     ```
 * - {py:obj}`_build_directed <src.policies.route_construction.exact_and_decomposition_solvers.smart_waste_collection_two_commodity_flow.gurobi._build_directed>`
@@ -116,10 +124,24 @@
 
 ````
 
+````{py:function} _copy_depot_distance(distance_matrix: typing.List[typing.List[float]], copy: int, i: int, j: int) -> float
+:canonical: src.policies.route_construction.exact_and_decomposition_solvers.smart_waste_collection_two_commodity_flow.gurobi._copy_depot_distance
+
+```{autodoc2-docstring} src.policies.route_construction.exact_and_decomposition_solvers.smart_waste_collection_two_commodity_flow.gurobi._copy_depot_distance
+```
+````
+
 ````{py:function} _build_paper(mdl: gurobipy.Model, d: src.policies.route_construction.exact_and_decomposition_solvers.smart_waste_collection_two_commodity_flow._tcf_data.TCFData, distance_matrix: typing.List[typing.List[float]], forced_nodes: typing.List[int], number_vehicles: int, dual_values: typing.Optional[typing.Dict[int, float]], options: typing.Dict[str, typing.Any]) -> src.policies.route_construction.exact_and_decomposition_solvers.smart_waste_collection_two_commodity_flow.gurobi._Built
 :canonical: src.policies.route_construction.exact_and_decomposition_solvers.smart_waste_collection_two_commodity_flow.gurobi._build_paper
 
 ```{autodoc2-docstring} src.policies.route_construction.exact_and_decomposition_solvers.smart_waste_collection_two_commodity_flow.gurobi._build_paper
+```
+````
+
+````{py:function} _build_asymmetric(mdl: gurobipy.Model, d: src.policies.route_construction.exact_and_decomposition_solvers.smart_waste_collection_two_commodity_flow._tcf_data.TCFData, distance_matrix: typing.List[typing.List[float]], forced_nodes: typing.List[int], number_vehicles: int, dual_values: typing.Optional[typing.Dict[int, float]], options: typing.Dict[str, typing.Any]) -> src.policies.route_construction.exact_and_decomposition_solvers.smart_waste_collection_two_commodity_flow.gurobi._Built
+:canonical: src.policies.route_construction.exact_and_decomposition_solvers.smart_waste_collection_two_commodity_flow.gurobi._build_asymmetric
+
+```{autodoc2-docstring} src.policies.route_construction.exact_and_decomposition_solvers.smart_waste_collection_two_commodity_flow.gurobi._build_asymmetric
 ```
 ````
 
@@ -137,7 +159,7 @@
 ```
 ````
 
-````{py:function} _run_gurobi_optimizer(bins: numpy.typing.NDArray[numpy.float64], distance_matrix: typing.List[typing.List[float]], env: typing.Optional[gurobipy.Env], values: typing.Dict[str, typing.Any], binsids: typing.List[int], mandatory: typing.List[int], number_vehicles: int = 1, time_limit: int = 60, seed: int = 42, dual_values: typing.Optional[typing.Dict[int, float]] = None) -> typing.Tuple[typing.List[int], float, float]
+````{py:function} _run_gurobi_optimizer(bins: numpy.typing.NDArray[numpy.float64], distance_matrix: typing.List[typing.List[float]], env: typing.Optional[gurobipy.Env], values: typing.Dict[str, typing.Any], binsids: typing.List[int], mandatory: typing.List[int], number_vehicles: int = 1, time_limit: int = 60, seed: int = 42, dual_values: typing.Optional[typing.Dict[int, float]] = None, default_feastol: bool = False, allow_escalation: bool = True, retry: bool = False) -> typing.Tuple[typing.List[int], float, float]
 :canonical: src.policies.route_construction.exact_and_decomposition_solvers.smart_waste_collection_two_commodity_flow.gurobi._run_gurobi_optimizer
 
 ```{autodoc2-docstring} src.policies.route_construction.exact_and_decomposition_solvers.smart_waste_collection_two_commodity_flow.gurobi._run_gurobi_optimizer

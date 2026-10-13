@@ -27,9 +27,9 @@ src.models.subnets.embeddings.edges
 
 src.models.subnets.embeddings.dynamic
 src.models.subnets.embeddings.static
+src.models.subnets.embeddings.cptp
 src.models.subnets.embeddings.matnet
 src.models.subnets.embeddings.ptp
-src.models.subnets.embeddings.mvptp
 ```
 
 ## Package Contents
@@ -101,7 +101,7 @@ src.models.subnets.embeddings.mvptp
 :canonical: src.models.subnets.embeddings.__all__
 :type: list[str]
 :value: >
-   ['PTPInitEmbedding', 'MVPTPInitEmbedding', 'EnvState', 'PTPState', 'MVPTPState', 'ContextEmbedder', ...
+   ['PTPInitEmbedding', 'CPTPInitEmbedding', 'EnvState', 'PTPState', 'CPTPState', 'ContextEmbedder', 'P...
 
 ```{autodoc2-docstring} src.models.subnets.embeddings.__all__
 ```

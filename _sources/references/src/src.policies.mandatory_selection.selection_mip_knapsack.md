@@ -42,7 +42,7 @@
 ```
 ````
 
-`````{py:class} MIPKnapsackSelection(overflow_penalty_frac: float = 1.0)
+`````{py:class} MIPKnapsackSelection(overflow_penalty_frac: typing.Optional[float] = None)
 :canonical: src.policies.mandatory_selection.selection_mip_knapsack.MIPKnapsackSelection
 
 Bases: {py:obj}`logic.src.interfaces.mandatory_selection.IMandatorySelectionStrategy`

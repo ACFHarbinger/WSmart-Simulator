@@ -23,12 +23,18 @@
 
 ### API
 
-`````{py:class} RevenueThresholdSelection
+`````{py:class} RevenueThresholdSelection(revenue_kg: typing.Optional[float] = None, revenue_threshold: typing.Optional[float] = None)
 :canonical: src.policies.mandatory_selection.selection_revenue.RevenueThresholdSelection
 
 Bases: {py:obj}`logic.src.interfaces.mandatory_selection.IMandatorySelectionStrategy`
 
 ```{autodoc2-docstring} src.policies.mandatory_selection.selection_revenue.RevenueThresholdSelection
+```
+
+```{rubric} Initialization
+```
+
+```{autodoc2-docstring} src.policies.mandatory_selection.selection_revenue.RevenueThresholdSelection.__init__
 ```
 
 ````{py:method} select_bins(context: logic.src.interfaces.context.SelectionContext) -> typing.Tuple[typing.List[int], logic.src.interfaces.context.SearchContext]

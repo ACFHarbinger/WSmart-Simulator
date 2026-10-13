@@ -66,7 +66,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="src.envs.routing.irp" href="src.envs.routing.irp.html" />
-    <link rel="prev" title="src.envs.tasks.cvrp" href="src.envs.tasks.cvrp.html" />
+    <link rel="prev" title="src.envs.tasks.tcptp" href="src.envs.tasks.tcptp.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -490,7 +490,7 @@ OPGenerator: Generator for Orienteering Problem instances.
 PCTSPGenerator: Generator for Prize-Collecting TSP instances.
 PDPGenerator: Generator for Pickup and Delivery Problem instances.
 ThOPGenerator: Generator for Thief Orienteering Problem instances.
-TCMVPTPGenerator: Generator for Time-Constrained Multi-Vehicle Profitable Tour Problem instances.
+TCPTPGenerator: Generator for Time-constrained Capacitated Profitable Tour Problem instances.
 RL4COEnvBase: Abstract base class for all routing environments.
 ImprovementEnvBase: Base class for improvement-based routing environments.
 ENV_REGISTRY: Mapping of problem name strings to their environment classes.
@@ -508,13 +508,13 @@ get_env: Factory function that instantiates an environment by name.</p>
 <li class="toctree-l1"><a class="reference internal" href="src.envs.routing.pctsp.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.envs.routing.pctsp</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="src.envs.routing.tsp.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.envs.routing.tsp</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="src.envs.routing.pdp.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.envs.routing.pdp</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="src.envs.routing.tcmvptp.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.envs.routing.tcmvptp</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="src.envs.routing.cptp.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.envs.routing.cptp</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="src.envs.routing.op.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.envs.routing.op</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="src.envs.routing.thop.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.envs.routing.thop</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="src.envs.routing.atsp.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.envs.routing.atsp</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="src.envs.routing.ptp.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.envs.routing.ptp</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="src.envs.routing.mvptp.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.envs.routing.mvptp</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="src.envs.routing.cvrp.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.envs.routing.cvrp</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="src.envs.routing.tcptp.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.envs.routing.tcptp</span></code></a></li>
 </ul>
 </div>
 </section>
@@ -558,7 +558,7 @@ get_env: Factory function that instantiates an environment by name.</p>
 <span class="sig-prename descclassname"><span class="pre">src.envs.routing.</span></span><span class="sig-name descname"><span class="pre">get_env</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">logic.src.envs.base.base.RL4COEnvBase</span></span></span><a class="headerlink" href="#src.envs.routing.get_env" title="Link to this definition">#</a></dt>
 <dd><p>Factory function to get environment by name.</p>
 <p>Args:
-name: Environment name (ptp, mvptp, tcmvptp, irp, atsp, cvrp, op, etc.)
+name: Environment name (ptp, cptp, tcptp, irp, atsp, cvrp, op, etc.)
 kwargs: Environment configuration parameters.</p>
 <p>Returns:
 Initialized environment instance.</p>
@@ -588,12 +588,12 @@ ValueError: If environment name is not recognized.</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="src.envs.tasks.cvrp.html"
+       href="src.envs.tasks.tcptp.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.envs.tasks.cvrp</span></code></p>
+        <p class="prev-next-title"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.envs.tasks.tcptp</span></code></p>
       </div>
     </a>
     <a class="right-next"

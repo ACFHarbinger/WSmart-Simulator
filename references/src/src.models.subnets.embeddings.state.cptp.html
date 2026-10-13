@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>src.models.subnets.embeddings.state.mvptp &#8212; WSmart-Route 1.1.0 documentation</title>
+    <title>src.models.subnets.embeddings.state.cptp &#8212; WSmart-Route 1.1.0 documentation</title>
   
   
   
@@ -62,11 +62,11 @@
     <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'references/src/src.models.subnets.embeddings.state.mvptp';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'references/src/src.models.subnets.embeddings.state.cptp';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="src.models.subnets.embeddings.positional" href="src.models.subnets.embeddings.positional.html" />
-    <link rel="prev" title="src.models.subnets.embeddings.state.ptp" href="src.models.subnets.embeddings.state.ptp.html" />
+    <link rel="next" title="src.models.subnets.embeddings.state.ptp" href="src.models.subnets.embeddings.state.ptp.html" />
+    <link rel="prev" title="src.models.subnets.embeddings.state.env" href="src.models.subnets.embeddings.state.env.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -358,7 +358,7 @@
       
       
       
-      <li><a href="../../_sources/references/src/src.models.subnets.embeddings.state.mvptp.md" target="_blank"
+      <li><a href="../../_sources/references/src/src.models.subnets.embeddings.state.cptp.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -442,7 +442,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>src.models.subnets.embeddings.state.mvptp</h1>
+    <h1>src.models.subnets.embeddings.state.cptp</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -455,7 +455,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-contents">Module Contents</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classes">Classes</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#api">API</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#src.models.subnets.embeddings.state.mvptp.MVPTPState"><code class="docutils literal notranslate"><span class="pre">MVPTPState</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#src.models.subnets.embeddings.state.cptp.CPTPState"><code class="docutils literal notranslate"><span class="pre">CPTPState</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -471,16 +471,16 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="module-src.models.subnets.embeddings.state.mvptp">
-<span id="src-models-subnets-embeddings-state-mvptp"></span><h1><a class="reference internal" href="#module-src.models.subnets.embeddings.state.mvptp" title="src.models.subnets.embeddings.state.mvptp"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.models.subnets.embeddings.state.mvptp</span></code></a><a class="headerlink" href="#module-src.models.subnets.embeddings.state.mvptp" title="Link to this heading">#</a></h1>
-<p>MVPTP specific context embedding module.</p>
-<p>This module provides the MVPTPState component, which builds on PTPState
+  <section class="tex2jax_ignore mathjax_ignore" id="module-src.models.subnets.embeddings.state.cptp">
+<span id="src-models-subnets-embeddings-state-cptp"></span><h1><a class="reference internal" href="#module-src.models.subnets.embeddings.state.cptp" title="src.models.subnets.embeddings.state.cptp"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.models.subnets.embeddings.state.cptp</span></code></a><a class="headerlink" href="#module-src.models.subnets.embeddings.state.cptp" title="Link to this heading">#</a></h1>
+<p>CPTP specific context embedding module.</p>
+<p>This module provides the CPTPState component, which builds on PTPState
 to provide context for Capacitated VRPs with Profits.</p>
 <p>Attributes:
-MVPTPState: State encoder for MVPTPs.</p>
+CPTPState: State encoder for CPTPs.</p>
 <p>Example:
-&gt;&gt;&gt; from logic.src.models.subnets.embeddings.state.mvptp import MVPTPState
-&gt;&gt;&gt; state_embedder = MVPTPState(embed_dim=128)
+&gt;&gt;&gt; from logic.src.models.subnets.embeddings.state.cptp import CPTPState
+&gt;&gt;&gt; state_embedder = CPTPState(embed_dim=128)
 &gt;&gt;&gt; context = state_embedder(embeddings, td)</p>
 <section id="module-contents">
 <h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">#</a></h2>
@@ -488,8 +488,8 @@ MVPTPState: State encoder for MVPTPs.</p>
 <h3>Classes<a class="headerlink" href="#classes" title="Link to this heading">#</a></h3>
 <div class="pst-scrollable-table-container"><table class="autosummary longtable table table-left">
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#src.models.subnets.embeddings.state.mvptp.MVPTPState" title="src.models.subnets.embeddings.state.mvptp.MVPTPState"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MVPTPState</span></code></a></p></td>
-<td><p>Context embedding for MVPTP.</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#src.models.subnets.embeddings.state.cptp.CPTPState" title="src.models.subnets.embeddings.state.cptp.CPTPState"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CPTPState</span></code></a></p></td>
+<td><p>Context embedding for CPTP.</p></td>
 </tr>
 </tbody>
 </table>
@@ -498,10 +498,10 @@ MVPTPState: State encoder for MVPTPs.</p>
 <section id="api">
 <h3>API<a class="headerlink" href="#api" title="Link to this heading">#</a></h3>
 <dl class="py class">
-<dt class="sig sig-object py" id="src.models.subnets.embeddings.state.mvptp.MVPTPState">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.models.subnets.embeddings.state.mvptp.</span></span><span class="sig-name descname"><span class="pre">MVPTPState</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">embed_dim</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.models.subnets.embeddings.state.mvptp.MVPTPState" title="Link to this definition">#</a></dt>
+<dt class="sig sig-object py" id="src.models.subnets.embeddings.state.cptp.CPTPState">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.models.subnets.embeddings.state.cptp.</span></span><span class="sig-name descname"><span class="pre">CPTPState</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">embed_dim</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.models.subnets.embeddings.state.cptp.CPTPState" title="Link to this definition">#</a></dt>
 <dd><p>Bases: <a class="reference internal" href="src.models.subnets.embeddings.state.ptp.html#src.models.subnets.embeddings.state.ptp.PTPState" title="src.models.subnets.embeddings.state.ptp.PTPState"><code class="xref py py-obj docutils literal notranslate"><span class="pre">src.models.subnets.embeddings.state.ptp.PTPState</span></code></a></p>
-<p>Context embedding for MVPTP.</p>
+<p>Context embedding for CPTP.</p>
 <p>Inherits from PTPState as the fundamental state features (capacity/remaining
 length) are shared between these problem types.</p>
 <p>Attributes:
@@ -528,20 +528,20 @@ embed_dim: Resulting embedding dimensionality.</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="src.models.subnets.embeddings.state.ptp.html"
+       href="src.models.subnets.embeddings.state.env.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.models.subnets.embeddings.state.ptp</span></code></p>
+        <p class="prev-next-title"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.models.subnets.embeddings.state.env</span></code></p>
       </div>
     </a>
     <a class="right-next"
-       href="src.models.subnets.embeddings.positional.html"
+       href="src.models.subnets.embeddings.state.ptp.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.models.subnets.embeddings.positional</span></code></p>
+        <p class="prev-next-title"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.models.subnets.embeddings.state.ptp</span></code></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -564,7 +564,7 @@ embed_dim: Resulting embedding dimensionality.</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-contents">Module Contents</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classes">Classes</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#api">API</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#src.models.subnets.embeddings.state.mvptp.MVPTPState"><code class="docutils literal notranslate"><span class="pre">MVPTPState</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#src.models.subnets.embeddings.state.cptp.CPTPState"><code class="docutils literal notranslate"><span class="pre">CPTPState</span></code></a></li>
 </ul>
 </li>
 </ul>

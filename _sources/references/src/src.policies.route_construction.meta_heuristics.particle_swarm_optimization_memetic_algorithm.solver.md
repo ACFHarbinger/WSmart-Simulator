@@ -43,10 +43,34 @@
 
 ````
 
+````{py:method} _out_of_time() -> bool
+:canonical: src.policies.route_construction.meta_heuristics.particle_swarm_optimization_memetic_algorithm.solver.PSOMASolver._out_of_time
+
+```{autodoc2-docstring} src.policies.route_construction.meta_heuristics.particle_swarm_optimization_memetic_algorithm.solver.PSOMASolver._out_of_time
+```
+
+````
+
 ````{py:method} _init_swarm()
 :canonical: src.policies.route_construction.meta_heuristics.particle_swarm_optimization_memetic_algorithm.solver.PSOMASolver._init_swarm
 
 ```{autodoc2-docstring} src.policies.route_construction.meta_heuristics.particle_swarm_optimization_memetic_algorithm.solver.PSOMASolver._init_swarm
+```
+
+````
+
+````{py:method} _nearest_neighbour_order() -> typing.List[int]
+:canonical: src.policies.route_construction.meta_heuristics.particle_swarm_optimization_memetic_algorithm.solver.PSOMASolver._nearest_neighbour_order
+
+```{autodoc2-docstring} src.policies.route_construction.meta_heuristics.particle_swarm_optimization_memetic_algorithm.solver.PSOMASolver._nearest_neighbour_order
+```
+
+````
+
+````{py:method} _seed_particle(p) -> None
+:canonical: src.policies.route_construction.meta_heuristics.particle_swarm_optimization_memetic_algorithm.solver.PSOMASolver._seed_particle
+
+```{autodoc2-docstring} src.policies.route_construction.meta_heuristics.particle_swarm_optimization_memetic_algorithm.solver.PSOMASolver._seed_particle
 ```
 
 ````

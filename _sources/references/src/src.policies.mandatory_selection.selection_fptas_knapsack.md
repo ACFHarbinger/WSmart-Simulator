@@ -106,7 +106,7 @@
 ```
 ````
 
-`````{py:class} FPTASKnapsackSelection(epsilon: float = 0.1, alpha: float = 0.5, overflow_penalty_frac: float = 1.0)
+`````{py:class} FPTASKnapsackSelection(epsilon: float = 0.1, alpha: float = 0.5, overflow_penalty_frac: typing.Optional[float] = None)
 :canonical: src.policies.mandatory_selection.selection_fptas_knapsack.FPTASKnapsackSelection
 
 Bases: {py:obj}`logic.src.interfaces.mandatory_selection.IMandatorySelectionStrategy`

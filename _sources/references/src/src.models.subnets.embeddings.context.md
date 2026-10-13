@@ -13,9 +13,9 @@
 :titlesonly:
 :maxdepth: 1
 
+src.models.subnets.embeddings.context.cptp
 src.models.subnets.embeddings.context.ptp
 src.models.subnets.embeddings.context.base
-src.models.subnets.embeddings.context.mvptp
 src.models.subnets.embeddings.context.generic
 ```
 
@@ -54,7 +54,7 @@ src.models.subnets.embeddings.context.generic
 :canonical: src.models.subnets.embeddings.context.__all__
 :type: list[str]
 :value: >
-   ['ContextEmbedder', 'MVPTPContextEmbedder', 'GenericContextEmbedder', 'PTPContextEmbedder', 'CONTEXT...
+   ['ContextEmbedder', 'CPTPContextEmbedder', 'GenericContextEmbedder', 'PTPContextEmbedder', 'CONTEXT_...
 
 ```{autodoc2-docstring} src.models.subnets.embeddings.context.__all__
 ```

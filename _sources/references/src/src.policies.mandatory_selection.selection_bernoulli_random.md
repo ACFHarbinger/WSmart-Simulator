@@ -23,12 +23,18 @@
 
 ### API
 
-`````{py:class} BernoulliRandomSelection
+`````{py:class} BernoulliRandomSelection(p: typing.Optional[float] = None, min_fill: float = 0.0)
 :canonical: src.policies.mandatory_selection.selection_bernoulli_random.BernoulliRandomSelection
 
 Bases: {py:obj}`logic.src.interfaces.mandatory_selection.IMandatorySelectionStrategy`
 
 ```{autodoc2-docstring} src.policies.mandatory_selection.selection_bernoulli_random.BernoulliRandomSelection
+```
+
+```{rubric} Initialization
+```
+
+```{autodoc2-docstring} src.policies.mandatory_selection.selection_bernoulli_random.BernoulliRandomSelection.__init__
 ```
 
 ````{py:method} select_bins(context: logic.src.interfaces.context.SelectionContext) -> typing.Tuple[typing.List[int], logic.src.interfaces.context.SearchContext]

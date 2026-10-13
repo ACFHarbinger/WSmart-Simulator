@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>src.envs.routing.tcmvptp &#8212; WSmart-Route 1.1.0 documentation</title>
+    <title>src.envs.tasks.cptp &#8212; WSmart-Route 1.1.0 documentation</title>
   
   
   
@@ -62,11 +62,11 @@
     <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'references/src/src.envs.routing.tcmvptp';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'references/src/src.envs.tasks.cptp';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="src.envs.routing.op" href="src.envs.routing.op.html" />
-    <link rel="prev" title="src.envs.routing.pdp" href="src.envs.routing.pdp.html" />
+    <link rel="next" title="src.envs.tasks.op" href="src.envs.tasks.op.html" />
+    <link rel="prev" title="src.envs.tasks.pdp" href="src.envs.tasks.pdp.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -177,8 +177,8 @@
 <li class="toctree-l3 current active has-children"><a class="reference internal" href="src.envs.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.envs</span></code></a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="src.envs.base.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.envs.base</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="src.envs.generators.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.envs.generators</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="src.envs.tasks.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.envs.tasks</span></code></a></li>
-<li class="toctree-l4 current active"><a class="reference internal" href="src.envs.routing.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.envs.routing</span></code></a></li>
+<li class="toctree-l4 current active"><a class="reference internal" href="src.envs.tasks.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.envs.tasks</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="src.envs.routing.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.envs.routing</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="src.envs.temporal.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.envs.temporal</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="src.envs.problems.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.envs.problems</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="src.envs.tsp_kopt.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.envs.tsp_kopt</span></code></a></li>
@@ -358,7 +358,7 @@
       
       
       
-      <li><a href="../../_sources/references/src/src.envs.routing.tcmvptp.md" target="_blank"
+      <li><a href="../../_sources/references/src/src.envs.tasks.cptp.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -442,7 +442,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>src.envs.routing.tcmvptp</h1>
+    <h1>src.envs.tasks.cptp</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -455,14 +455,9 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-contents">Module Contents</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classes">Classes</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#api">API</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#src.envs.routing.tcmvptp.TCMVPTPEnv"><code class="docutils literal notranslate"><span class="pre">TCMVPTPEnv</span></code></a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#src.envs.routing.tcmvptp.TCMVPTPEnv.name"><code class="docutils literal notranslate"><span class="pre">TCMVPTPEnv.name</span></code></a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#src.envs.routing.tcmvptp.TCMVPTPEnv._reset_instance"><code class="docutils literal notranslate"><span class="pre">TCMVPTPEnv._reset_instance()</span></code></a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#src.envs.routing.tcmvptp.TCMVPTPEnv._reset"><code class="docutils literal notranslate"><span class="pre">TCMVPTPEnv._reset()</span></code></a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#src.envs.routing.tcmvptp.TCMVPTPEnv._step"><code class="docutils literal notranslate"><span class="pre">TCMVPTPEnv._step()</span></code></a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#src.envs.routing.tcmvptp.TCMVPTPEnv._step_instance"><code class="docutils literal notranslate"><span class="pre">TCMVPTPEnv._step_instance()</span></code></a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#src.envs.routing.tcmvptp.TCMVPTPEnv._get_action_mask"><code class="docutils literal notranslate"><span class="pre">TCMVPTPEnv._get_action_mask()</span></code></a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#src.envs.routing.tcmvptp.TCMVPTPEnv._check_done"><code class="docutils literal notranslate"><span class="pre">TCMVPTPEnv._check_done()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#src.envs.tasks.cptp.CPTP"><code class="docutils literal notranslate"><span class="pre">CPTP</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#src.envs.tasks.cptp.CPTP.NAME"><code class="docutils literal notranslate"><span class="pre">CPTP.NAME</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#src.envs.tasks.cptp.CPTP.get_costs"><code class="docutils literal notranslate"><span class="pre">CPTP.get_costs()</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -480,36 +475,22 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="module-src.envs.routing.tcmvptp">
-<span id="src-envs-routing-tcmvptp"></span><h1><a class="reference internal" href="#module-src.envs.routing.tcmvptp" title="src.envs.routing.tcmvptp"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.envs.routing.tcmvptp</span></code></a><a class="headerlink" href="#module-src.envs.routing.tcmvptp" title="Link to this heading">#</a></h1>
-<p>TCMVPTP Environment implementation.</p>
-<p>Time-Constrained Multi-Vehicle Profitable Tour Problem: single-vehicle, multi-trip variant of
-MVPTP where each trip is bounded by <em>both</em> constraints simultaneously –
-MVPTP’s per-trip vehicle capacity, unchanged, plus a per-trip time budget
-(travel + service time). Neither constraint replaces the other. The vehicle
-may return to the depot and start a new trip with both budgets freshly
-reset; the episode ends once it is back at the depot with nothing more
-reachable even at full budget.</p>
-<p>“Team” here means multiple <em>trips</em> by one vehicle within a period, not a
-concurrent multi-vehicle fleet. A true multi-vehicle fleet TCMVPTP is tracked
-as future work (docs/moon/roadmaps/new_features.md §E.8) for the
-heterogeneous-waste-stream scenario (e.g. one vehicle per waste type
-running simultaneously) – that needs a fleet dimension this class does
-not have.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="module-src.envs.tasks.cptp">
+<span id="src-envs-tasks-cptp"></span><h1><a class="reference internal" href="#module-src.envs.tasks.cptp" title="src.envs.tasks.cptp"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.envs.tasks.cptp</span></code></a><a class="headerlink" href="#module-src.envs.tasks.cptp" title="Link to this heading">#</a></h1>
+<p>cptp.py module.</p>
 <p>Attributes:
-TCMVPTPEnv: TCMVPTP environment.</p>
+CPTP: Capacitated Profitable Tour Problem task inheriting prize-collection and capacity logic from PTP.</p>
 <p>Example:
-&gt;&gt;&gt; from logic.src.envs.routing import get_env
-&gt;&gt;&gt; env = get_env(“tcmvptp”, num_loc=50)
-&gt;&gt;&gt; td = env.reset()</p>
+&gt;&gt;&gt; import cptp</p>
 <section id="module-contents">
 <h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">#</a></h2>
 <section id="classes">
 <h3>Classes<a class="headerlink" href="#classes" title="Link to this heading">#</a></h3>
 <div class="pst-scrollable-table-container"><table class="autosummary longtable table table-left">
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#src.envs.routing.tcmvptp.TCMVPTPEnv" title="src.envs.routing.tcmvptp.TCMVPTPEnv"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TCMVPTPEnv</span></code></a></p></td>
-<td><p>Time-Constrained Multi-Vehicle Profitable Tour Problem: MVPTP plus a per-trip time budget.</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#src.envs.tasks.cptp.CPTP" title="src.envs.tasks.cptp.CPTP"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CPTP</span></code></a></p></td>
+<td><p>Capacitated Profitable Tour Problem.
+Includes vehicle capacity constraints.</p></td>
 </tr>
 </tbody>
 </table>
@@ -518,116 +499,30 @@ TCMVPTPEnv: TCMVPTP environment.</p>
 <section id="api">
 <h3>API<a class="headerlink" href="#api" title="Link to this heading">#</a></h3>
 <dl class="py class">
-<dt class="sig sig-object py" id="src.envs.routing.tcmvptp.TCMVPTPEnv">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.envs.routing.tcmvptp.</span></span><span class="sig-name descname"><span class="pre">TCMVPTPEnv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">generator</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">logic.src.envs.generators.tcmvptp.TCMVPTPGenerator</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">generator_params</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">dict</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">waste_weight</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cost_weight</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">revenue_kg</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cost_km</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">torch.device</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'cpu'</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.envs.routing.tcmvptp.TCMVPTPEnv" title="Link to this definition">#</a></dt>
-<dd><p>Bases: <code class="xref py py-obj docutils literal notranslate"><span class="pre">logic.src.envs.routing.mvptp.MVPTPEnv</span></code></p>
-<p>Time-Constrained Multi-Vehicle Profitable Tour Problem: MVPTP plus a per-trip time budget.</p>
+<dt class="sig sig-object py" id="src.envs.tasks.cptp.CPTP">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.envs.tasks.cptp.</span></span><span class="sig-name descname"><span class="pre">CPTP</span></span><a class="headerlink" href="#src.envs.tasks.cptp.CPTP" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-obj docutils literal notranslate"><span class="pre">logic.src.envs.tasks.ptp.PTP</span></code></p>
+<p>Capacitated Profitable Tour Problem.
+Includes vehicle capacity constraints.</p>
 <p>Attributes:
-name: Name of the environment.</p>
-<p class="rubric">Initialization</p>
-<p>Initialize TCMVPTPEnv with a TCMVPTPGenerator (not PTPEnv’s plain
-PTPGenerator).</p>
-<p>Without this override, <code class="docutils literal notranslate"><span class="pre">get_env(&quot;tcmvptp&quot;,</span> <span class="pre">shift_hours=6.5,</span> <span class="pre">...)</span></code>
-silently builds a PTPGenerator via PTPEnv.<strong>init</strong>: the
-shift_hours/avg_speed_kmh/service_time_h kwargs are swallowed by
-PTPGenerator’s **kwargs, never reach a TCMVPTPGenerator, and
-_reset_instance falls back to get_default_temporal_params()
-regardless of what was requested. Confirmed live (Hydra config
-overrides for these three keys were composing correctly but never
-actually reaching the environment) before this fix.</p>
-<p>Args:
-generator: Pre-built TCMVPTPGenerator instance. Built from
-generator_params if not supplied.
-generator_params: Keyword arguments forwarded to TCMVPTPGenerator
-when generator is None.
-waste_weight: Weight for waste collection in reward.
-cost_weight: Weight for travel cost in reward.
-revenue_kg: Optional revenue per kg (overrides waste_weight).
-cost_km: Optional cost per km (overrides cost_weight).
-device: Device for torch tensors (‘cpu’ or ‘cuda’).
-kwargs: Additional keyword arguments.</p>
+NAME: Environment name identifier.</p>
 <dl class="py attribute">
-<dt class="sig sig-object py" id="src.envs.routing.tcmvptp.TCMVPTPEnv.name">
-<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#src.envs.routing.tcmvptp.TCMVPTPEnv.name" title="Link to this definition">#</a></dt>
-<dd><p>‘tcmvptp’</p>
+<dt class="sig sig-object py" id="src.envs.tasks.cptp.CPTP.NAME">
+<span class="sig-name descname"><span class="pre">NAME</span></span><a class="headerlink" href="#src.envs.tasks.cptp.CPTP.NAME" title="Link to this definition">#</a></dt>
+<dd><p>‘cptp’</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="src.envs.routing.tcmvptp.TCMVPTPEnv._reset_instance">
-<span class="sig-name descname"><span class="pre">_reset_instance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tensordict</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tensordict.TensorDict</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tensordict.TensorDict</span></span></span><a class="headerlink" href="#src.envs.routing.tcmvptp.TCMVPTPEnv._reset_instance" title="Link to this definition">#</a></dt>
-<dd><p>Initialize TCMVPTP state with per-trip time-budget tracking.</p>
+<dt class="sig sig-object py" id="src.envs.tasks.cptp.CPTP.get_costs">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_costs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataset</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pi</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cw_dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dist_matrix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.envs.tasks.cptp.CPTP.get_costs" title="Link to this definition">#</a></dt>
+<dd><p>Compute CPTP costs (same as PTP but checks capacity).</p>
 <p>Args:
-tensordict: Input TensorDict containing graph structure and node properties.</p>
+dataset: Problem data.
+pi: Tours.
+cw_dict: Cost weights.
+dist_matrix: optional.</p>
 <p>Returns:
-TensorDict: Initialized TCMVPTP state with temporal tracking fields.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="src.envs.routing.tcmvptp.TCMVPTPEnv._reset">
-<span class="sig-name descname"><span class="pre">_reset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tensordict</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">tensordict.TensorDict</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tensordict.TensorDict</span></span></span><a class="headerlink" href="#src.envs.routing.tcmvptp.TCMVPTPEnv._reset" title="Link to this definition">#</a></dt>
-<dd><p>Reset the environment.</p>
-<p>Args:
-tensordict: Input TensorDict containing graph structure and node properties.
-kwargs: Additional keyword arguments.</p>
-<p>Returns:
-TensorDict: Reset environment state.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="src.envs.routing.tcmvptp.TCMVPTPEnv._step">
-<span class="sig-name descname"><span class="pre">_step</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tensordict</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tensordict.TensorDict</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tensordict.TensorDict</span></span></span><a class="headerlink" href="#src.envs.routing.tcmvptp.TCMVPTPEnv._step" title="Link to this definition">#</a></dt>
-<dd><p>Step the environment.</p>
-<p>Args:
-tensordict: Input TensorDict containing action.</p>
-<p>Returns:
-TensorDict: Environment state after action.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="src.envs.routing.tcmvptp.TCMVPTPEnv._step_instance">
-<span class="sig-name descname"><span class="pre">_step_instance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tensordict</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tensordict.TensorDict</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tensordict.TensorDict</span></span></span><a class="headerlink" href="#src.envs.routing.tcmvptp.TCMVPTPEnv._step_instance" title="Link to this definition">#</a></dt>
-<dd><p>Execute action with per-trip time-budget tracking.</p>
-<p>Reads the per-step travel distance from the <code class="docutils literal notranslate"><span class="pre">tour_length</span></code> delta
-produced by MVPTPEnv/PTPEnv/OpsMixin’s own step (so this honours a
-road distance matrix <code class="docutils literal notranslate"><span class="pre">dm</span></code> when present, exactly like every other
-distance consumer in the mixin) rather than recomputing distance
-from raw coordinates. That same <code class="docutils literal notranslate"><span class="pre">super()</span></code> call also applies
-MVPTP’s capacity tracking, so both constraints update together.</p>
-<p>Args:
-tensordict: Input TensorDict containing action and state.</p>
-<p>Returns:
-TensorDict: Updated state with time_spent/remaining_time.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="src.envs.routing.tcmvptp.TCMVPTPEnv._get_action_mask">
-<span class="sig-name descname"><span class="pre">_get_action_mask</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tensordict</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tensordict.TensorDict</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">torch.Tensor</span></span></span><a class="headerlink" href="#src.envs.routing.tcmvptp.TCMVPTPEnv._get_action_mask" title="Link to this definition">#</a></dt>
-<dd><p>Mask nodes unreachable within the remaining per-trip time budget,
-layered on top of MVPTP’s own capacity-aware mask.</p>
-<p>A customer is valid only if MVPTP’s mask allows it (not visited,
-has waste, mandatory logic, fits remaining capacity) AND the
-vehicle can reach it, service it, and still get back to the depot
-before <code class="docutils literal notranslate"><span class="pre">remaining_time</span></code> runs out – the same reach-and-return
-structure as OPEnv’s distance budget, translated to time. Both the
-capacity and time constraints must hold; this only narrows MVPTP’s
-mask further, never widens it.</p>
-<p>Args:
-tensordict: Input TensorDict containing graph structure and node properties.</p>
-<p>Returns:
-torch.Tensor: Boolean action mask, shape (batch, num_nodes).</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="src.envs.routing.tcmvptp.TCMVPTPEnv._check_done">
-<span class="sig-name descname"><span class="pre">_check_done</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tensordict</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tensordict.TensorDict</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">torch.Tensor</span></span></span><a class="headerlink" href="#src.envs.routing.tcmvptp.TCMVPTPEnv._check_done" title="Link to this definition">#</a></dt>
-<dd><p>Episode ends at the depot once no customer remains reachable even
-with a freshly reset trip budget – i.e. true exhaustion, not just
-“chose to return this time” (which would end a single-trip PTP but
-must not end a multi-trip TCMVPTP episode early).</p>
-<p>Args:
-tensordict: Input TensorDict containing graph structure and node properties.</p>
-<p>Returns:
-torch.Tensor: Boolean tensor indicating if the episode is done, shape (batch,).</p>
+Tuple of (cost, dict, None).</p>
 </dd></dl>
 
 </dd></dl>
@@ -648,20 +543,20 @@ torch.Tensor: Boolean tensor indicating if the episode is done, shape (batch,).<
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="src.envs.routing.pdp.html"
+       href="src.envs.tasks.pdp.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.envs.routing.pdp</span></code></p>
+        <p class="prev-next-title"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.envs.tasks.pdp</span></code></p>
       </div>
     </a>
     <a class="right-next"
-       href="src.envs.routing.op.html"
+       href="src.envs.tasks.op.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.envs.routing.op</span></code></p>
+        <p class="prev-next-title"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.envs.tasks.op</span></code></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -684,14 +579,9 @@ torch.Tensor: Boolean tensor indicating if the episode is done, shape (batch,).<
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-contents">Module Contents</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classes">Classes</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#api">API</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#src.envs.routing.tcmvptp.TCMVPTPEnv"><code class="docutils literal notranslate"><span class="pre">TCMVPTPEnv</span></code></a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#src.envs.routing.tcmvptp.TCMVPTPEnv.name"><code class="docutils literal notranslate"><span class="pre">TCMVPTPEnv.name</span></code></a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#src.envs.routing.tcmvptp.TCMVPTPEnv._reset_instance"><code class="docutils literal notranslate"><span class="pre">TCMVPTPEnv._reset_instance()</span></code></a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#src.envs.routing.tcmvptp.TCMVPTPEnv._reset"><code class="docutils literal notranslate"><span class="pre">TCMVPTPEnv._reset()</span></code></a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#src.envs.routing.tcmvptp.TCMVPTPEnv._step"><code class="docutils literal notranslate"><span class="pre">TCMVPTPEnv._step()</span></code></a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#src.envs.routing.tcmvptp.TCMVPTPEnv._step_instance"><code class="docutils literal notranslate"><span class="pre">TCMVPTPEnv._step_instance()</span></code></a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#src.envs.routing.tcmvptp.TCMVPTPEnv._get_action_mask"><code class="docutils literal notranslate"><span class="pre">TCMVPTPEnv._get_action_mask()</span></code></a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#src.envs.routing.tcmvptp.TCMVPTPEnv._check_done"><code class="docutils literal notranslate"><span class="pre">TCMVPTPEnv._check_done()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#src.envs.tasks.cptp.CPTP"><code class="docutils literal notranslate"><span class="pre">CPTP</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#src.envs.tasks.cptp.CPTP.NAME"><code class="docutils literal notranslate"><span class="pre">CPTP.NAME</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#src.envs.tasks.cptp.CPTP.get_costs"><code class="docutils literal notranslate"><span class="pre">CPTP.get_costs()</span></code></a></li>
 </ul>
 </li>
 </ul>

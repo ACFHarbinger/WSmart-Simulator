@@ -17,13 +17,13 @@ src.envs.generators.irp
 src.envs.generators.pctsp
 src.envs.generators.tsp
 src.envs.generators.pdp
-src.envs.generators.tcmvptp
 src.envs.generators.op
 src.envs.generators.thop
 src.envs.generators.atsp
 src.envs.generators.ptp
 src.envs.generators.base
 src.envs.generators.cvrp
+src.envs.generators.tcptp
 ```
 
 ## Package Contents

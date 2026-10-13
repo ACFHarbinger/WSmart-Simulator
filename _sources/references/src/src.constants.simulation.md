@@ -146,7 +146,7 @@
 :canonical: src.constants.simulation.PROBLEMS
 :type: typing.List[str]
 :value: >
-   ['ptp', 'mvptp', 'tcmvptp']
+   ['ptp', 'cptp', 'tcptp']
 
 ```{autodoc2-docstring} src.constants.simulation.PROBLEMS
 ```

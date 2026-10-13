@@ -14,8 +14,8 @@
 :maxdepth: 1
 
 src.models.subnets.embeddings.state.env
+src.models.subnets.embeddings.state.cptp
 src.models.subnets.embeddings.state.ptp
-src.models.subnets.embeddings.state.mvptp
 ```
 
 ## Package Contents
@@ -53,7 +53,7 @@ src.models.subnets.embeddings.state.mvptp
 :canonical: src.models.subnets.embeddings.state.__all__
 :type: list[str]
 :value: >
-   ['EnvState', 'PTPState', 'MVPTPState', 'STATE_EMBEDDING_REGISTRY']
+   ['EnvState', 'PTPState', 'CPTPState', 'STATE_EMBEDDING_REGISTRY']
 
 ```{autodoc2-docstring} src.models.subnets.embeddings.state.__all__
 ```

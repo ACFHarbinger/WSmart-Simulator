@@ -481,8 +481,8 @@ REVENUE_KG: Revenue per kilogram
 BIN_CAPACITY: Bin capacity
 VEHICLE_CAPACITY: Vehicle capacity
 PTP: Capacitated VRP
-MVPTP: Capacitated VRP with waste
-TCMVPTP: PTP with both per-trip capacity and time constraints</p>
+CPTP: Capacitated VRP with waste
+TCPTP: PTP with both per-trip capacity and time constraints</p>
 <p>Example:
 from logic.src.envs.problems import PTP
 env = PTP(num_loc=50, cost_km=10)
@@ -505,7 +505,7 @@ obs, _ = env.reset()</p>
 <dl class="py data">
 <dt class="sig sig-object py" id="src.envs.problems.__all__">
 <span class="sig-prename descclassname"><span class="pre">src.envs.problems.</span></span><span class="sig-name descname"><span class="pre">__all__</span></span><a class="headerlink" href="#src.envs.problems.__all__" title="Link to this definition">#</a></dt>
-<dd><p>[‘BaseProblem’, ‘COST_KM’, ‘REVENUE_KG’, ‘BIN_CAPACITY’, ‘VEHICLE_CAPACITY’, ‘PTP’, ‘MVPTP’, ‘TCMVPT…</p>
+<dd><p>[‘BaseProblem’, ‘COST_KM’, ‘REVENUE_KG’, ‘BIN_CAPACITY’, ‘VEHICLE_CAPACITY’, ‘PTP’, ‘CPTP’, ‘TCPTP’]</p>
 </dd></dl>
 
 </section>

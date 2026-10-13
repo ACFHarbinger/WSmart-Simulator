@@ -18,13 +18,13 @@ src.envs.routing.spctsp
 src.envs.routing.pctsp
 src.envs.routing.tsp
 src.envs.routing.pdp
-src.envs.routing.tcmvptp
+src.envs.routing.cptp
 src.envs.routing.op
 src.envs.routing.thop
 src.envs.routing.atsp
 src.envs.routing.ptp
-src.envs.routing.mvptp
 src.envs.routing.cvrp
+src.envs.routing.tcptp
 ```
 
 ## Package Contents

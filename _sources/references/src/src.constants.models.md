@@ -43,8 +43,8 @@
   - ```{autodoc2-docstring} src.constants.models.PTP_STEP_CONTEXT_OFFSET
     :summary:
     ```
-* - {py:obj}`MVPTP_STEP_CONTEXT_OFFSET <src.constants.models.MVPTP_STEP_CONTEXT_OFFSET>`
-  - ```{autodoc2-docstring} src.constants.models.MVPTP_STEP_CONTEXT_OFFSET
+* - {py:obj}`CPTP_STEP_CONTEXT_OFFSET <src.constants.models.CPTP_STEP_CONTEXT_OFFSET>`
+  - ```{autodoc2-docstring} src.constants.models.CPTP_STEP_CONTEXT_OFFSET
     :summary:
     ```
 * - {py:obj}`DEFAULT_TEMPORAL_HORIZON <src.constants.models.DEFAULT_TEMPORAL_HORIZON>`
@@ -152,13 +152,13 @@
 
 ````
 
-````{py:data} MVPTP_STEP_CONTEXT_OFFSET
-:canonical: src.constants.models.MVPTP_STEP_CONTEXT_OFFSET
+````{py:data} CPTP_STEP_CONTEXT_OFFSET
+:canonical: src.constants.models.CPTP_STEP_CONTEXT_OFFSET
 :type: int
 :value: >
    3
 
-```{autodoc2-docstring} src.constants.models.MVPTP_STEP_CONTEXT_OFFSET
+```{autodoc2-docstring} src.constants.models.CPTP_STEP_CONTEXT_OFFSET
 ```
 
 ````

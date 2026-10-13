@@ -172,6 +172,28 @@
 
 ````
 
+````{py:attribute} sa_steps
+:canonical: src.policies.route_construction.meta_heuristics.particle_swarm_optimization_memetic_algorithm.params.PSOMAParams.sa_steps
+:type: int
+:value: >
+   5000
+
+```{autodoc2-docstring} src.policies.route_construction.meta_heuristics.particle_swarm_optimization_memetic_algorithm.params.PSOMAParams.sa_steps
+```
+
+````
+
+````{py:attribute} seed_nearest_neighbour
+:canonical: src.policies.route_construction.meta_heuristics.particle_swarm_optimization_memetic_algorithm.params.PSOMAParams.seed_nearest_neighbour
+:type: bool
+:value: >
+   True
+
+```{autodoc2-docstring} src.policies.route_construction.meta_heuristics.particle_swarm_optimization_memetic_algorithm.params.PSOMAParams.seed_nearest_neighbour
+```
+
+````
+
 ````{py:attribute} vrpp
 :canonical: src.policies.route_construction.meta_heuristics.particle_swarm_optimization_memetic_algorithm.params.PSOMAParams.vrpp
 :type: bool

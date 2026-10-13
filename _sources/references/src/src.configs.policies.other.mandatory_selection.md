@@ -127,6 +127,22 @@
   - ```{autodoc2-docstring} src.configs.policies.other.mandatory_selection.StaggeredRegularSelectionConfig
     :summary:
     ```
+* - {py:obj}`BernoulliRandomSelectionConfig <src.configs.policies.other.mandatory_selection.BernoulliRandomSelectionConfig>`
+  - ```{autodoc2-docstring} src.configs.policies.other.mandatory_selection.BernoulliRandomSelectionConfig
+    :summary:
+    ```
+* - {py:obj}`FilterAndFanSelectionConfig <src.configs.policies.other.mandatory_selection.FilterAndFanSelectionConfig>`
+  - ```{autodoc2-docstring} src.configs.policies.other.mandatory_selection.FilterAndFanSelectionConfig
+    :summary:
+    ```
+* - {py:obj}`FPTASKnapsackSelectionConfig <src.configs.policies.other.mandatory_selection.FPTASKnapsackSelectionConfig>`
+  - ```{autodoc2-docstring} src.configs.policies.other.mandatory_selection.FPTASKnapsackSelectionConfig
+    :summary:
+    ```
+* - {py:obj}`PortfolioDispatcherSelectionConfig <src.configs.policies.other.mandatory_selection.PortfolioDispatcherSelectionConfig>`
+  - ```{autodoc2-docstring} src.configs.policies.other.mandatory_selection.PortfolioDispatcherSelectionConfig
+    :summary:
+    ```
 * - {py:obj}`MandatorySelectionConfig <src.configs.policies.other.mandatory_selection.MandatorySelectionConfig>`
   - ```{autodoc2-docstring} src.configs.policies.other.mandatory_selection.MandatorySelectionConfig
     :summary:
@@ -211,9 +227,9 @@
 
 ````{py:attribute} revenue_kg
 :canonical: src.configs.policies.other.mandatory_selection.RevenueSelectionConfig.revenue_kg
-:type: float
+:type: typing.Optional[float]
 :value: >
-   1.0
+   None
 
 ```{autodoc2-docstring} src.configs.policies.other.mandatory_selection.RevenueSelectionConfig.revenue_kg
 ```
@@ -233,9 +249,9 @@
 
 ````{py:attribute} revenue_threshold
 :canonical: src.configs.policies.other.mandatory_selection.RevenueSelectionConfig.revenue_threshold
-:type: float
+:type: typing.Optional[float]
 :value: >
-   0.0
+   None
 
 ```{autodoc2-docstring} src.configs.policies.other.mandatory_selection.RevenueSelectionConfig.revenue_threshold
 ```
@@ -533,9 +549,9 @@
 
 ````{py:attribute} n_vehicles
 :canonical: src.configs.policies.other.mandatory_selection.KnapsackSelectionConfig.n_vehicles
-:type: int
+:type: typing.Optional[int]
 :value: >
-   1
+   None
 
 ```{autodoc2-docstring} src.configs.policies.other.mandatory_selection.KnapsackSelectionConfig.n_vehicles
 ```
@@ -544,9 +560,9 @@
 
 ````{py:attribute} cost_per_km
 :canonical: src.configs.policies.other.mandatory_selection.KnapsackSelectionConfig.cost_per_km
-:type: float
+:type: typing.Optional[float]
 :value: >
-   0.1
+   None
 
 ```{autodoc2-docstring} src.configs.policies.other.mandatory_selection.KnapsackSelectionConfig.cost_per_km
 ```
@@ -555,9 +571,9 @@
 
 ````{py:attribute} use_eoq_threshold
 :canonical: src.configs.policies.other.mandatory_selection.KnapsackSelectionConfig.use_eoq_threshold
-:type: bool
+:type: typing.Optional[bool]
 :value: >
-   False
+   None
 
 ```{autodoc2-docstring} src.configs.policies.other.mandatory_selection.KnapsackSelectionConfig.use_eoq_threshold
 ```
@@ -566,9 +582,9 @@
 
 ````{py:attribute} holding_cost_per_kg_day
 :canonical: src.configs.policies.other.mandatory_selection.KnapsackSelectionConfig.holding_cost_per_kg_day
-:type: float
+:type: typing.Optional[float]
 :value: >
-   0.0
+   None
 
 ```{autodoc2-docstring} src.configs.policies.other.mandatory_selection.KnapsackSelectionConfig.holding_cost_per_kg_day
 ```
@@ -577,9 +593,9 @@
 
 ````{py:attribute} ordering_cost_per_visit
 :canonical: src.configs.policies.other.mandatory_selection.KnapsackSelectionConfig.ordering_cost_per_visit
-:type: float
+:type: typing.Optional[float]
 :value: >
-   0.0
+   None
 
 ```{autodoc2-docstring} src.configs.policies.other.mandatory_selection.KnapsackSelectionConfig.ordering_cost_per_visit
 ```
@@ -598,9 +614,9 @@ Bases: {py:obj}`src.configs.policies.other.mandatory_selection.KnapsackSelection
 
 ````{py:attribute} overflow_penalty_frac
 :canonical: src.configs.policies.other.mandatory_selection.MIPKnapsackSelectionConfig.overflow_penalty_frac
-:type: float
+:type: typing.Optional[float]
 :value: >
-   1.0
+   None
 
 ```{autodoc2-docstring} src.configs.policies.other.mandatory_selection.MIPKnapsackSelectionConfig.overflow_penalty_frac
 ```
@@ -619,9 +635,9 @@ Bases: {py:obj}`src.configs.policies.other.mandatory_selection.KnapsackSelection
 
 ````{py:attribute} revenue_kg
 :canonical: src.configs.policies.other.mandatory_selection.FractionalKnapsackSelectionConfig.revenue_kg
-:type: float
+:type: typing.Optional[float]
 :value: >
-   1.0
+   None
 
 ```{autodoc2-docstring} src.configs.policies.other.mandatory_selection.FractionalKnapsackSelectionConfig.revenue_kg
 ```
@@ -630,9 +646,9 @@ Bases: {py:obj}`src.configs.policies.other.mandatory_selection.KnapsackSelection
 
 ````{py:attribute} bin_capacity
 :canonical: src.configs.policies.other.mandatory_selection.FractionalKnapsackSelectionConfig.bin_capacity
-:type: float
+:type: typing.Optional[float]
 :value: >
-   1.0
+   None
 
 ```{autodoc2-docstring} src.configs.policies.other.mandatory_selection.FractionalKnapsackSelectionConfig.bin_capacity
 ```
@@ -641,9 +657,9 @@ Bases: {py:obj}`src.configs.policies.other.mandatory_selection.KnapsackSelection
 
 ````{py:attribute} holding_cost_per_kg_day
 :canonical: src.configs.policies.other.mandatory_selection.FractionalKnapsackSelectionConfig.holding_cost_per_kg_day
-:type: float
+:type: typing.Optional[float]
 :value: >
-   0.01
+   None
 
 ```{autodoc2-docstring} src.configs.policies.other.mandatory_selection.FractionalKnapsackSelectionConfig.holding_cost_per_kg_day
 ```
@@ -652,9 +668,9 @@ Bases: {py:obj}`src.configs.policies.other.mandatory_selection.KnapsackSelection
 
 ````{py:attribute} ordering_cost_per_visit
 :canonical: src.configs.policies.other.mandatory_selection.FractionalKnapsackSelectionConfig.ordering_cost_per_visit
-:type: float
+:type: typing.Optional[float]
 :value: >
-   10.0
+   None
 
 ```{autodoc2-docstring} src.configs.policies.other.mandatory_selection.FractionalKnapsackSelectionConfig.ordering_cost_per_visit
 ```
@@ -1045,6 +1061,137 @@ Bases: {py:obj}`src.configs.policies.other.mandatory_selection.KnapsackSelection
 
 `````
 
+`````{py:class} BernoulliRandomSelectionConfig
+:canonical: src.configs.policies.other.mandatory_selection.BernoulliRandomSelectionConfig
+
+```{autodoc2-docstring} src.configs.policies.other.mandatory_selection.BernoulliRandomSelectionConfig
+```
+
+````{py:attribute} p
+:canonical: src.configs.policies.other.mandatory_selection.BernoulliRandomSelectionConfig.p
+:type: typing.Optional[float]
+:value: >
+   None
+
+```{autodoc2-docstring} src.configs.policies.other.mandatory_selection.BernoulliRandomSelectionConfig.p
+```
+
+````
+
+````{py:attribute} min_fill
+:canonical: src.configs.policies.other.mandatory_selection.BernoulliRandomSelectionConfig.min_fill
+:type: float
+:value: >
+   0.0
+
+```{autodoc2-docstring} src.configs.policies.other.mandatory_selection.BernoulliRandomSelectionConfig.min_fill
+```
+
+````
+
+`````
+
+`````{py:class} FilterAndFanSelectionConfig
+:canonical: src.configs.policies.other.mandatory_selection.FilterAndFanSelectionConfig
+
+```{autodoc2-docstring} src.configs.policies.other.mandatory_selection.FilterAndFanSelectionConfig
+```
+
+````{py:attribute} filter_width
+:canonical: src.configs.policies.other.mandatory_selection.FilterAndFanSelectionConfig.filter_width
+:type: typing.Optional[int]
+:value: >
+   None
+
+```{autodoc2-docstring} src.configs.policies.other.mandatory_selection.FilterAndFanSelectionConfig.filter_width
+```
+
+````
+
+````{py:attribute} fan_depth
+:canonical: src.configs.policies.other.mandatory_selection.FilterAndFanSelectionConfig.fan_depth
+:type: typing.Optional[int]
+:value: >
+   None
+
+```{autodoc2-docstring} src.configs.policies.other.mandatory_selection.FilterAndFanSelectionConfig.fan_depth
+```
+
+````
+
+`````
+
+`````{py:class} FPTASKnapsackSelectionConfig
+:canonical: src.configs.policies.other.mandatory_selection.FPTASKnapsackSelectionConfig
+
+```{autodoc2-docstring} src.configs.policies.other.mandatory_selection.FPTASKnapsackSelectionConfig
+```
+
+````{py:attribute} epsilon
+:canonical: src.configs.policies.other.mandatory_selection.FPTASKnapsackSelectionConfig.epsilon
+:type: float
+:value: >
+   0.1
+
+```{autodoc2-docstring} src.configs.policies.other.mandatory_selection.FPTASKnapsackSelectionConfig.epsilon
+```
+
+````
+
+````{py:attribute} alpha
+:canonical: src.configs.policies.other.mandatory_selection.FPTASKnapsackSelectionConfig.alpha
+:type: float
+:value: >
+   0.5
+
+```{autodoc2-docstring} src.configs.policies.other.mandatory_selection.FPTASKnapsackSelectionConfig.alpha
+```
+
+````
+
+````{py:attribute} overflow_penalty_frac
+:canonical: src.configs.policies.other.mandatory_selection.FPTASKnapsackSelectionConfig.overflow_penalty_frac
+:type: typing.Optional[float]
+:value: >
+   None
+
+```{autodoc2-docstring} src.configs.policies.other.mandatory_selection.FPTASKnapsackSelectionConfig.overflow_penalty_frac
+```
+
+````
+
+`````
+
+`````{py:class} PortfolioDispatcherSelectionConfig
+:canonical: src.configs.policies.other.mandatory_selection.PortfolioDispatcherSelectionConfig
+
+```{autodoc2-docstring} src.configs.policies.other.mandatory_selection.PortfolioDispatcherSelectionConfig
+```
+
+````{py:attribute} dispatcher_mode
+:canonical: src.configs.policies.other.mandatory_selection.PortfolioDispatcherSelectionConfig.dispatcher_mode
+:type: typing.Optional[str]
+:value: >
+   None
+
+```{autodoc2-docstring} src.configs.policies.other.mandatory_selection.PortfolioDispatcherSelectionConfig.dispatcher_mode
+```
+
+````
+
+````{py:attribute} dispatcher_candidate_strategies
+:canonical: src.configs.policies.other.mandatory_selection.PortfolioDispatcherSelectionConfig.dispatcher_candidate_strategies
+:type: typing.Optional[typing.List[str]]
+:value: >
+   None
+
+```{autodoc2-docstring} src.configs.policies.other.mandatory_selection.PortfolioDispatcherSelectionConfig.dispatcher_candidate_strategies
+```
+
+````
+
+`````
+
 `````{py:class} MandatorySelectionConfig
 :canonical: src.configs.policies.other.mandatory_selection.MandatorySelectionConfig
 
@@ -1355,6 +1502,50 @@ Bases: {py:obj}`src.configs.policies.other.mandatory_selection.KnapsackSelection
    'field(...)'
 
 ```{autodoc2-docstring} src.configs.policies.other.mandatory_selection.MandatorySelectionConfig.staggered_regular
+```
+
+````
+
+````{py:attribute} bernoulli_random
+:canonical: src.configs.policies.other.mandatory_selection.MandatorySelectionConfig.bernoulli_random
+:type: src.configs.policies.other.mandatory_selection.BernoulliRandomSelectionConfig
+:value: >
+   'field(...)'
+
+```{autodoc2-docstring} src.configs.policies.other.mandatory_selection.MandatorySelectionConfig.bernoulli_random
+```
+
+````
+
+````{py:attribute} filter_and_fan
+:canonical: src.configs.policies.other.mandatory_selection.MandatorySelectionConfig.filter_and_fan
+:type: src.configs.policies.other.mandatory_selection.FilterAndFanSelectionConfig
+:value: >
+   'field(...)'
+
+```{autodoc2-docstring} src.configs.policies.other.mandatory_selection.MandatorySelectionConfig.filter_and_fan
+```
+
+````
+
+````{py:attribute} fptas_knapsack
+:canonical: src.configs.policies.other.mandatory_selection.MandatorySelectionConfig.fptas_knapsack
+:type: src.configs.policies.other.mandatory_selection.FPTASKnapsackSelectionConfig
+:value: >
+   'field(...)'
+
+```{autodoc2-docstring} src.configs.policies.other.mandatory_selection.MandatorySelectionConfig.fptas_knapsack
+```
+
+````
+
+````{py:attribute} portfolio_dispatcher
+:canonical: src.configs.policies.other.mandatory_selection.MandatorySelectionConfig.portfolio_dispatcher
+:type: src.configs.policies.other.mandatory_selection.PortfolioDispatcherSelectionConfig
+:value: >
+   'field(...)'
+
+```{autodoc2-docstring} src.configs.policies.other.mandatory_selection.MandatorySelectionConfig.portfolio_dispatcher
 ```
 
 ````

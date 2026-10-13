@@ -15,6 +15,10 @@
 :class: autosummary longtable
 :align: left
 
+* - {py:obj}`pool_start_method <src.pipeline.features.test.orchestrator.parallel_runner.pool_start_method>`
+  - ```{autodoc2-docstring} src.pipeline.features.test.orchestrator.parallel_runner.pool_start_method
+    :summary:
+    ```
 * - {py:obj}`run_parallel_simulations <src.pipeline.features.test.orchestrator.parallel_runner.run_parallel_simulations>`
   - ```{autodoc2-docstring} src.pipeline.features.test.orchestrator.parallel_runner.run_parallel_simulations
     :summary:
@@ -34,6 +38,13 @@
 ````
 
 ### API
+
+````{py:function} pool_start_method(sim: typing.Any, device: typing.Any) -> str
+:canonical: src.pipeline.features.test.orchestrator.parallel_runner.pool_start_method
+
+```{autodoc2-docstring} src.pipeline.features.test.orchestrator.parallel_runner.pool_start_method
+```
+````
 
 ````{py:function} run_parallel_simulations(cfg: logic.src.configs.Config, device: typing.Any, indices: typing.List[typing.Any], sample_idx_ls: typing.List[typing.List[int]], weights_path: str, lock: typing.Any, manager: typing.Any, n_cores: int, task_count: int, log_file: typing.Optional[str], original_stderr: typing.Any, shared_metrics: typing.Any, tracking_uri: typing.Optional[str] = None, tracking_run_id: typing.Optional[str] = None) -> typing.Tuple[typing.Dict[str, typing.Any], typing.Optional[typing.Dict[str, typing.Any]], typing.List[typing.Dict[str, typing.Any]]]
 :canonical: src.pipeline.features.test.orchestrator.parallel_runner.run_parallel_simulations

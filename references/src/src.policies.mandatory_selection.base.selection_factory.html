@@ -454,8 +454,11 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-contents">Module Contents</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classes">Classes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#functions">Functions</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data">Data</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#api">API</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#src.policies.mandatory_selection.base.selection_factory.logger"><code class="docutils literal notranslate"><span class="pre">logger</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#src.policies.mandatory_selection.base.selection_factory._instantiate"><code class="docutils literal notranslate"><span class="pre">_instantiate()</span></code></a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#src.policies.mandatory_selection.base.selection_factory.CONFIG_MAPPING"><code class="docutils literal notranslate"><span class="pre">CONFIG_MAPPING</span></code></a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#src.policies.mandatory_selection.base.selection_factory.MandatorySelectionFactory"><code class="docutils literal notranslate"><span class="pre">MandatorySelectionFactory</span></code></a><ul class="nav section-nav flex-column">
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#src.policies.mandatory_selection.base.selection_factory.MandatorySelectionFactory.create_strategy"><code class="docutils literal notranslate"><span class="pre">MandatorySelectionFactory.create_strategy()</span></code></a></li>
@@ -501,11 +504,25 @@ CONFIG_MAPPING: Mapping from strategy names to config attributes.</p>
 </table>
 </div>
 </section>
+<section id="functions">
+<h3>Functions<a class="headerlink" href="#functions" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="autosummary longtable table table-left">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#src.policies.mandatory_selection.base.selection_factory._instantiate" title="src.policies.mandatory_selection.base.selection_factory._instantiate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">_instantiate</span></code></a></p></td>
+<td><p>Build a strategy from the settings it accepts.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
 <section id="data">
 <h3>Data<a class="headerlink" href="#data" title="Link to this heading">#</a></h3>
 <div class="pst-scrollable-table-container"><table class="autosummary longtable table table-left">
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#src.policies.mandatory_selection.base.selection_factory.CONFIG_MAPPING" title="src.policies.mandatory_selection.base.selection_factory.CONFIG_MAPPING"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CONFIG_MAPPING</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#src.policies.mandatory_selection.base.selection_factory.logger" title="src.policies.mandatory_selection.base.selection_factory.logger"><code class="xref py py-obj docutils literal notranslate"><span class="pre">logger</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#src.policies.mandatory_selection.base.selection_factory.CONFIG_MAPPING" title="src.policies.mandatory_selection.base.selection_factory.CONFIG_MAPPING"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CONFIG_MAPPING</span></code></a></p></td>
 <td></td>
 </tr>
 </tbody>
@@ -514,6 +531,20 @@ CONFIG_MAPPING: Mapping from strategy names to config attributes.</p>
 </section>
 <section id="api">
 <h3>API<a class="headerlink" href="#api" title="Link to this heading">#</a></h3>
+<dl class="py data">
+<dt class="sig sig-object py" id="src.policies.mandatory_selection.base.selection_factory.logger">
+<span class="sig-prename descclassname"><span class="pre">src.policies.mandatory_selection.base.selection_factory.</span></span><span class="sig-name descname"><span class="pre">logger</span></span><a class="headerlink" href="#src.policies.mandatory_selection.base.selection_factory.logger" title="Link to this definition">#</a></dt>
+<dd><p>‘getLogger(…)’</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.policies.mandatory_selection.base.selection_factory._instantiate">
+<span class="sig-prename descclassname"><span class="pre">src.policies.mandatory_selection.base.selection_factory.</span></span><span class="sig-name descname"><span class="pre">_instantiate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">strategy_cls</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Any</span></span></span><a class="headerlink" href="#src.policies.mandatory_selection.base.selection_factory._instantiate" title="Link to this definition">#</a></dt>
+<dd><p>Build a strategy from the settings it accepts.</p>
+<p><code class="docutils literal notranslate"><span class="pre">None</span></code> values mean “unset” and are never reported. A set value the class does
+not accept is reported with a warning, not silently dropped.</p>
+</dd></dl>
+
 <dl class="py data">
 <dt class="sig sig-object py" id="src.policies.mandatory_selection.base.selection_factory.CONFIG_MAPPING">
 <span class="sig-prename descclassname"><span class="pre">src.policies.mandatory_selection.base.selection_factory.</span></span><span class="sig-name descname"><span class="pre">CONFIG_MAPPING</span></span><a class="headerlink" href="#src.policies.mandatory_selection.base.selection_factory.CONFIG_MAPPING" title="Link to this definition">#</a></dt>
@@ -602,8 +633,11 @@ IMandatorySelectionStrategy: The instantiated selection strategy.</p>
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-contents">Module Contents</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classes">Classes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#functions">Functions</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data">Data</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#api">API</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#src.policies.mandatory_selection.base.selection_factory.logger"><code class="docutils literal notranslate"><span class="pre">logger</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#src.policies.mandatory_selection.base.selection_factory._instantiate"><code class="docutils literal notranslate"><span class="pre">_instantiate()</span></code></a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#src.policies.mandatory_selection.base.selection_factory.CONFIG_MAPPING"><code class="docutils literal notranslate"><span class="pre">CONFIG_MAPPING</span></code></a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#src.policies.mandatory_selection.base.selection_factory.MandatorySelectionFactory"><code class="docutils literal notranslate"><span class="pre">MandatorySelectionFactory</span></code></a><ul class="nav section-nav flex-column">
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#src.policies.mandatory_selection.base.selection_factory.MandatorySelectionFactory.create_strategy"><code class="docutils literal notranslate"><span class="pre">MandatorySelectionFactory.create_strategy()</span></code></a></li>

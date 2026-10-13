@@ -184,6 +184,28 @@
 
 ````
 
+````{py:attribute} asymmetric
+:canonical: src.policies.route_construction.exact_and_decomposition_solvers.smart_waste_collection_two_commodity_flow.params.SWCTCFParams.asymmetric
+:type: bool
+:value: >
+   False
+
+```{autodoc2-docstring} src.policies.route_construction.exact_and_decomposition_solvers.smart_waste_collection_two_commodity_flow.params.SWCTCFParams.asymmetric
+```
+
+````
+
+````{py:attribute} no_solution_time_factor
+:canonical: src.policies.route_construction.exact_and_decomposition_solvers.smart_waste_collection_two_commodity_flow.params.SWCTCFParams.no_solution_time_factor
+:type: float
+:value: >
+   3.0
+
+```{autodoc2-docstring} src.policies.route_construction.exact_and_decomposition_solvers.smart_waste_collection_two_commodity_flow.params.SWCTCFParams.no_solution_time_factor
+```
+
+````
+
 ````{py:method} from_config(config: typing.Any) -> src.policies.route_construction.exact_and_decomposition_solvers.smart_waste_collection_two_commodity_flow.params.SWCTCFParams
 :canonical: src.policies.route_construction.exact_and_decomposition_solvers.smart_waste_collection_two_commodity_flow.params.SWCTCFParams.from_config
 :classmethod:

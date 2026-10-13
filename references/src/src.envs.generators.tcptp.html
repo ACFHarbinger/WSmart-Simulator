@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>src.envs.tasks.tcmvptp &#8212; WSmart-Route 1.1.0 documentation</title>
+    <title>src.envs.generators.tcptp &#8212; WSmart-Route 1.1.0 documentation</title>
   
   
   
@@ -62,11 +62,11 @@
     <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'references/src/src.envs.tasks.tcmvptp';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'references/src/src.envs.generators.tcptp';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="src.envs.tasks.op" href="src.envs.tasks.op.html" />
-    <link rel="prev" title="src.envs.tasks.pdp" href="src.envs.tasks.pdp.html" />
+    <link rel="next" title="src.envs.tasks" href="src.envs.tasks.html" />
+    <link rel="prev" title="src.envs.generators.cvrp" href="src.envs.generators.cvrp.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -176,8 +176,8 @@
 <li class="toctree-l2 current active has-children"><a class="reference internal" href="src.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src</span></code></a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l3 current active has-children"><a class="reference internal" href="src.envs.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.envs</span></code></a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="src.envs.base.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.envs.base</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="src.envs.generators.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.envs.generators</span></code></a></li>
-<li class="toctree-l4 current active"><a class="reference internal" href="src.envs.tasks.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.envs.tasks</span></code></a></li>
+<li class="toctree-l4 current active"><a class="reference internal" href="src.envs.generators.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.envs.generators</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="src.envs.tasks.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.envs.tasks</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="src.envs.routing.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.envs.routing</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="src.envs.temporal.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.envs.temporal</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="src.envs.problems.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.envs.problems</span></code></a></li>
@@ -358,7 +358,7 @@
       
       
       
-      <li><a href="../../_sources/references/src/src.envs.tasks.tcmvptp.md" target="_blank"
+      <li><a href="../../_sources/references/src/src.envs.generators.tcptp.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -442,7 +442,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>src.envs.tasks.tcmvptp</h1>
+    <h1>src.envs.generators.tcptp</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -455,9 +455,8 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-contents">Module Contents</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classes">Classes</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#api">API</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#src.envs.tasks.tcmvptp.TCMVPTP"><code class="docutils literal notranslate"><span class="pre">TCMVPTP</span></code></a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#src.envs.tasks.tcmvptp.TCMVPTP.NAME"><code class="docutils literal notranslate"><span class="pre">TCMVPTP.NAME</span></code></a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#src.envs.tasks.tcmvptp.TCMVPTP.get_costs"><code class="docutils literal notranslate"><span class="pre">TCMVPTP.get_costs()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#src.envs.generators.tcptp.TCPTPGenerator"><code class="docutils literal notranslate"><span class="pre">TCPTPGenerator</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#src.envs.generators.tcptp.TCPTPGenerator._generate"><code class="docutils literal notranslate"><span class="pre">TCPTPGenerator._generate()</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -475,23 +474,23 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="module-src.envs.tasks.tcmvptp">
-<span id="src-envs-tasks-tcmvptp"></span><h1><a class="reference internal" href="#module-src.envs.tasks.tcmvptp" title="src.envs.tasks.tcmvptp"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.envs.tasks.tcmvptp</span></code></a><a class="headerlink" href="#module-src.envs.tasks.tcmvptp" title="Link to this heading">#</a></h1>
-<p>tcmvptp.py module.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="module-src.envs.generators.tcptp">
+<span id="src-envs-generators-tcptp"></span><h1><a class="reference internal" href="#module-src.envs.generators.tcptp" title="src.envs.generators.tcptp"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.envs.generators.tcptp</span></code></a><a class="headerlink" href="#module-src.envs.generators.tcptp" title="Link to this heading">#</a></h1>
+<p>TCPTP problem generator.</p>
 <p>Attributes:
-TCMVPTP: Time-Constrained Multi-Vehicle Profitable Tour Problem task, inheriting MVPTP’s
-prize-collection objective and per-trip capacity check, and adding
-a per-trip time-budget feasibility check on top.</p>
+TCPTPGenerator: TCPTPGenerator class.</p>
 <p>Example:
-&gt;&gt;&gt; import tcmvptp</p>
+&gt;&gt;&gt; from logic.src.envs.generators import TCPTPGenerator
+&gt;&gt;&gt; generator = TCPTPGenerator(num_loc=50)
+&gt;&gt;&gt; instance = generator.generate()</p>
 <section id="module-contents">
 <h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">#</a></h2>
 <section id="classes">
 <h3>Classes<a class="headerlink" href="#classes" title="Link to this heading">#</a></h3>
 <div class="pst-scrollable-table-container"><table class="autosummary longtable table table-left">
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#src.envs.tasks.tcmvptp.TCMVPTP" title="src.envs.tasks.tcmvptp.TCMVPTP"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TCMVPTP</span></code></a></p></td>
-<td><p>Time-Constrained Multi-Vehicle Profitable Tour Problem (TCMVPTP).</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#src.envs.generators.tcptp.TCPTPGenerator" title="src.envs.generators.tcptp.TCPTPGenerator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TCPTPGenerator</span></code></a></p></td>
+<td><p>Generator for Time-constrained Capacitated Profitable Tour Problem (TCPTP) instances.</p></td>
 </tr>
 </tbody>
 </table>
@@ -500,48 +499,40 @@ a per-trip time-budget feasibility check on top.</p>
 <section id="api">
 <h3>API<a class="headerlink" href="#api" title="Link to this heading">#</a></h3>
 <dl class="py class">
-<dt class="sig sig-object py" id="src.envs.tasks.tcmvptp.TCMVPTP">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.envs.tasks.tcmvptp.</span></span><span class="sig-name descname"><span class="pre">TCMVPTP</span></span><a class="headerlink" href="#src.envs.tasks.tcmvptp.TCMVPTP" title="Link to this definition">#</a></dt>
-<dd><p>Bases: <code class="xref py py-obj docutils literal notranslate"><span class="pre">logic.src.envs.tasks.mvptp.MVPTP</span></code></p>
-<p>Time-Constrained Multi-Vehicle Profitable Tour Problem (TCMVPTP).</p>
-<p>Same objective and capacity constraint as MVPTP (maximize
-waste-collection profit, subject to a per-trip vehicle capacity). TCMVPTP
-adds a second, independent per-trip constraint on top: each trip
-(depot-to-depot leg of the tour) is also bounded by a working-shift
-<em>time</em> budget – travel time plus per-bin service time – from
-<code class="docutils literal notranslate"><span class="pre">SimulationRepository.get_temporal_params()</span></code>. Both constraints must
-hold simultaneously; neither replaces the other.</p>
-<p>“Team” here is one vehicle making multiple trips within a period, not a
-concurrent fleet; see the module docstring of
-<code class="docutils literal notranslate"><span class="pre">logic.src.envs.routing.tcmvptp</span></code> for the future true-fleet variant.</p>
+<dt class="sig sig-object py" id="src.envs.generators.tcptp.TCPTPGenerator">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.envs.generators.tcptp.</span></span><span class="sig-name descname"><span class="pre">TCPTPGenerator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shift_hours</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">None</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">avg_speed_kmh</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">None</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">service_time_h</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">None</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.envs.generators.tcptp.TCPTPGenerator" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-obj docutils literal notranslate"><span class="pre">logic.src.envs.generators.ptp.PTPGenerator</span></code></p>
+<p>Generator for Time-constrained Capacitated Profitable Tour Problem (TCPTP) instances.</p>
+<p>Same node/waste layout as PTP (reused as-is: locations, depot, waste
+values), plus the per-instance temporal resource fields consumed by
+<code class="docutils literal notranslate"><span class="pre">TCPTPEnv</span></code>/<code class="docutils literal notranslate"><span class="pre">TCPTP</span></code>: the working-shift time budget, average driving
+speed, and per-bin service time. Defaults describe one driver’s 7h
+shift; pass <code class="docutils literal notranslate"><span class="pre">shift_hours</span></code>/<code class="docutils literal notranslate"><span class="pre">avg_speed_kmh</span></code>/<code class="docutils literal notranslate"><span class="pre">service_time_h</span></code> to
+override them.</p>
 <p>Attributes:
-NAME: Environment name identifier.</p>
-<dl class="py attribute">
-<dt class="sig sig-object py" id="src.envs.tasks.tcmvptp.TCMVPTP.NAME">
-<span class="sig-name descname"><span class="pre">NAME</span></span><a class="headerlink" href="#src.envs.tasks.tcmvptp.TCMVPTP.NAME" title="Link to this definition">#</a></dt>
-<dd><p>‘tcmvptp’</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="src.envs.tasks.tcmvptp.TCMVPTP.get_costs">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_costs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataset</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pi</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">torch.Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cw_dict</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dist_matrix</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">torch.Tensor</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">torch.Tensor</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">torch.Tensor</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">None</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#src.envs.tasks.tcmvptp.TCMVPTP.get_costs" title="Link to this definition">#</a></dt>
-<dd><p>Compute TCMVPTP costs: MVPTP’s objective + capacity check, plus a
-per-trip time check.</p>
+shift_hours: Total time budget per trip (h).
+avg_speed_kmh: Average driving speed (km/h).
+service_time_h: Time to visit and empty a single bin (h).</p>
+<p class="rubric">Initialization</p>
+<p>Initialize TCPTP generator.</p>
 <p>Args:
-dataset: Problem data. Optional per-instance overrides
-<code class="docutils literal notranslate"><span class="pre">shift_hours</span></code>/<code class="docutils literal notranslate"><span class="pre">avg_speed_kmh</span></code>/<code class="docutils literal notranslate"><span class="pre">service_time_h</span></code>
-(each shape (batch,)) take precedence over
-routing defaults.
-pi: Tours [batch, nodes].
-cw_dict: Cost weights dictionary.
-dist_matrix: Optional distance matrix.</p>
+args: Positional arguments forwarded to PTPGenerator.
+shift_hours: Override for the per-trip time budget (h).
+avg_speed_kmh: Override for the average driving speed (km/h).
+service_time_h: Override for the per-bin service time (h).
+kwargs: Additional keyword arguments forwarded to PTPGenerator.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="src.envs.generators.tcptp.TCPTPGenerator._generate">
+<span class="sig-name descname"><span class="pre">_generate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">batch_size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tensordict.TensorDict</span></span></span><a class="headerlink" href="#src.envs.generators.tcptp.TCPTPGenerator._generate" title="Link to this definition">#</a></dt>
+<dd><p>Generate TCPTP instances: PTP fields plus temporal resource fields.</p>
+<p>Args:
+batch_size: Batch size.</p>
 <p>Returns:
-Tuple of (negative_profit, cost_dict, None). cost_dict adds a
-“time” key (total time spent, hours) to MVPTP’s
-{“length”, “waste”, “overflows”, “total”}.</p>
-<p>Raises:
-AssertionError: If any trip exceeds its vehicle capacity
-(from MVPTP.get_costs) or its shift time budget.</p>
+TensorDict with PTP’s fields (locs, depot, waste, capacity,
+max_waste) plus:
+shift_hours: [*B]    — per-trip time budget (h)
+avg_speed_kmh: [*B]  — average driving speed (km/h)
+service_time_h: [*B] — per-bin service time (h)</p>
 </dd></dl>
 
 </dd></dl>
@@ -562,20 +553,20 @@ AssertionError: If any trip exceeds its vehicle capacity
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="src.envs.tasks.pdp.html"
+       href="src.envs.generators.cvrp.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.envs.tasks.pdp</span></code></p>
+        <p class="prev-next-title"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.envs.generators.cvrp</span></code></p>
       </div>
     </a>
     <a class="right-next"
-       href="src.envs.tasks.op.html"
+       href="src.envs.tasks.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.envs.tasks.op</span></code></p>
+        <p class="prev-next-title"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.envs.tasks</span></code></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -598,9 +589,8 @@ AssertionError: If any trip exceeds its vehicle capacity
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-contents">Module Contents</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classes">Classes</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#api">API</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#src.envs.tasks.tcmvptp.TCMVPTP"><code class="docutils literal notranslate"><span class="pre">TCMVPTP</span></code></a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#src.envs.tasks.tcmvptp.TCMVPTP.NAME"><code class="docutils literal notranslate"><span class="pre">TCMVPTP.NAME</span></code></a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#src.envs.tasks.tcmvptp.TCMVPTP.get_costs"><code class="docutils literal notranslate"><span class="pre">TCMVPTP.get_costs()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#src.envs.generators.tcptp.TCPTPGenerator"><code class="docutils literal notranslate"><span class="pre">TCPTPGenerator</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#src.envs.generators.tcptp.TCPTPGenerator._generate"><code class="docutils literal notranslate"><span class="pre">TCPTPGenerator._generate()</span></code></a></li>
 </ul>
 </li>
 </ul>

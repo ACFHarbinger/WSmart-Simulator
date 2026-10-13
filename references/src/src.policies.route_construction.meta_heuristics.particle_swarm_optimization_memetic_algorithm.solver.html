@@ -457,7 +457,10 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#api">API</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#src.policies.route_construction.meta_heuristics.particle_swarm_optimization_memetic_algorithm.solver.PSOMASolver"><code class="docutils literal notranslate"><span class="pre">PSOMASolver</span></code></a><ul class="nav section-nav flex-column">
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#src.policies.route_construction.meta_heuristics.particle_swarm_optimization_memetic_algorithm.solver.PSOMASolver.solve"><code class="docutils literal notranslate"><span class="pre">PSOMASolver.solve()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#src.policies.route_construction.meta_heuristics.particle_swarm_optimization_memetic_algorithm.solver.PSOMASolver._out_of_time"><code class="docutils literal notranslate"><span class="pre">PSOMASolver._out_of_time()</span></code></a></li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#src.policies.route_construction.meta_heuristics.particle_swarm_optimization_memetic_algorithm.solver.PSOMASolver._init_swarm"><code class="docutils literal notranslate"><span class="pre">PSOMASolver._init_swarm()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#src.policies.route_construction.meta_heuristics.particle_swarm_optimization_memetic_algorithm.solver.PSOMASolver._nearest_neighbour_order"><code class="docutils literal notranslate"><span class="pre">PSOMASolver._nearest_neighbour_order()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#src.policies.route_construction.meta_heuristics.particle_swarm_optimization_memetic_algorithm.solver.PSOMASolver._seed_particle"><code class="docutils literal notranslate"><span class="pre">PSOMASolver._seed_particle()</span></code></a></li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#src.policies.route_construction.meta_heuristics.particle_swarm_optimization_memetic_algorithm.solver.PSOMASolver._set_gbest"><code class="docutils literal notranslate"><span class="pre">PSOMASolver._set_gbest()</span></code></a></li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#src.policies.route_construction.meta_heuristics.particle_swarm_optimization_memetic_algorithm.solver.PSOMASolver._calculate_cost"><code class="docutils literal notranslate"><span class="pre">PSOMASolver._calculate_cost()</span></code></a></li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#src.policies.route_construction.meta_heuristics.particle_swarm_optimization_memetic_algorithm.solver.PSOMASolver._training_phase"><code class="docutils literal notranslate"><span class="pre">PSOMASolver._training_phase()</span></code></a></li>
@@ -566,11 +569,29 @@ Tuple[List[List[int]], float, float]: A tuple containing:
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="src.policies.route_construction.meta_heuristics.particle_swarm_optimization_memetic_algorithm.solver.PSOMASolver._out_of_time">
+<span class="sig-name descname"><span class="pre">_out_of_time</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#src.policies.route_construction.meta_heuristics.particle_swarm_optimization_memetic_algorithm.solver.PSOMASolver._out_of_time" title="Link to this definition">#</a></dt>
+<dd><p>True once the solve’s wall-clock budget is spent.</p>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="src.policies.route_construction.meta_heuristics.particle_swarm_optimization_memetic_algorithm.solver.PSOMASolver._init_swarm">
 <span class="sig-name descname"><span class="pre">_init_swarm</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#src.policies.route_construction.meta_heuristics.particle_swarm_optimization_memetic_algorithm.solver.PSOMASolver._init_swarm" title="Link to this definition">#</a></dt>
 <dd><p>Initialises the swarm with random feasible solutions.</p>
 <p>Returns:
 List[PSOMAParticle]: Initialized swarm of particles.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.policies.route_construction.meta_heuristics.particle_swarm_optimization_memetic_algorithm.solver.PSOMASolver._nearest_neighbour_order">
+<span class="sig-name descname"><span class="pre">_nearest_neighbour_order</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#src.policies.route_construction.meta_heuristics.particle_swarm_optimization_memetic_algorithm.solver.PSOMASolver._nearest_neighbour_order" title="Link to this definition">#</a></dt>
+<dd><p>Client order of a nearest-neighbour tour from the depot (true distances).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.policies.route_construction.meta_heuristics.particle_swarm_optimization_memetic_algorithm.solver.PSOMASolver._seed_particle">
+<span class="sig-name descname"><span class="pre">_seed_particle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">p</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#src.policies.route_construction.meta_heuristics.particle_swarm_optimization_memetic_algorithm.solver.PSOMASolver._seed_particle" title="Link to this definition">#</a></dt>
+<dd><p>Place one particle on the nearest-neighbour giant tour (ROV keys ranked along the tour).</p>
 </dd></dl>
 
 <dl class="py method">
@@ -743,7 +764,10 @@ Tuple[np.ndarray, np.ndarray, np.ndarray, float]: A tuple containing:
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#api">API</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#src.policies.route_construction.meta_heuristics.particle_swarm_optimization_memetic_algorithm.solver.PSOMASolver"><code class="docutils literal notranslate"><span class="pre">PSOMASolver</span></code></a><ul class="nav section-nav flex-column">
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#src.policies.route_construction.meta_heuristics.particle_swarm_optimization_memetic_algorithm.solver.PSOMASolver.solve"><code class="docutils literal notranslate"><span class="pre">PSOMASolver.solve()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#src.policies.route_construction.meta_heuristics.particle_swarm_optimization_memetic_algorithm.solver.PSOMASolver._out_of_time"><code class="docutils literal notranslate"><span class="pre">PSOMASolver._out_of_time()</span></code></a></li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#src.policies.route_construction.meta_heuristics.particle_swarm_optimization_memetic_algorithm.solver.PSOMASolver._init_swarm"><code class="docutils literal notranslate"><span class="pre">PSOMASolver._init_swarm()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#src.policies.route_construction.meta_heuristics.particle_swarm_optimization_memetic_algorithm.solver.PSOMASolver._nearest_neighbour_order"><code class="docutils literal notranslate"><span class="pre">PSOMASolver._nearest_neighbour_order()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#src.policies.route_construction.meta_heuristics.particle_swarm_optimization_memetic_algorithm.solver.PSOMASolver._seed_particle"><code class="docutils literal notranslate"><span class="pre">PSOMASolver._seed_particle()</span></code></a></li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#src.policies.route_construction.meta_heuristics.particle_swarm_optimization_memetic_algorithm.solver.PSOMASolver._set_gbest"><code class="docutils literal notranslate"><span class="pre">PSOMASolver._set_gbest()</span></code></a></li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#src.policies.route_construction.meta_heuristics.particle_swarm_optimization_memetic_algorithm.solver.PSOMASolver._calculate_cost"><code class="docutils literal notranslate"><span class="pre">PSOMASolver._calculate_cost()</span></code></a></li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#src.policies.route_construction.meta_heuristics.particle_swarm_optimization_memetic_algorithm.solver.PSOMASolver._training_phase"><code class="docutils literal notranslate"><span class="pre">PSOMASolver._training_phase()</span></code></a></li>

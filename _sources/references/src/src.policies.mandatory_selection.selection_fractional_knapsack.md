@@ -23,12 +23,18 @@
 
 ### API
 
-`````{py:class} FractionalKnapsackSelection
+`````{py:class} FractionalKnapsackSelection(n_vehicles: typing.Optional[int] = None, cost_per_km: typing.Optional[float] = None)
 :canonical: src.policies.mandatory_selection.selection_fractional_knapsack.FractionalKnapsackSelection
 
 Bases: {py:obj}`logic.src.interfaces.mandatory_selection.IMandatorySelectionStrategy`
 
 ```{autodoc2-docstring} src.policies.mandatory_selection.selection_fractional_knapsack.FractionalKnapsackSelection
+```
+
+```{rubric} Initialization
+```
+
+```{autodoc2-docstring} src.policies.mandatory_selection.selection_fractional_knapsack.FractionalKnapsackSelection.__init__
 ```
 
 ````{py:attribute} _EPS

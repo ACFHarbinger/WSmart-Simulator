@@ -480,7 +480,7 @@ document.write(`
 
 # Remove all &#39;emp&#39; ALNS runs from a results directory
 remove_targeted_runs(
-    results_dir=&quot;assets/output/30_days/riomaior_100&quot;,
+    results_dir=&quot;outputs/simulations/30_days/riomaior_100&quot;,
     policy_filter=PolicyFilter(
         distributions=[&quot;emp&quot;],
         constructors=[&quot;alns&quot;],
@@ -489,7 +489,7 @@ remove_targeted_runs(
 
 # Dry-run to preview
 removed = remove_targeted_runs(
-    results_dir=&quot;assets/output/30_days/riomaior_100&quot;,
+    results_dir=&quot;outputs/simulations/30_days/riomaior_100&quot;,
     policy_filter=PolicyFilter(improvers=[&quot;ftsp&quot;]),
     dry_run=True,
 )

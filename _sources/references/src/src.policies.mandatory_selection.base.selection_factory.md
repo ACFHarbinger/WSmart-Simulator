@@ -21,12 +21,28 @@
     ```
 ````
 
+### Functions
+
+````{list-table}
+:class: autosummary longtable
+:align: left
+
+* - {py:obj}`_instantiate <src.policies.mandatory_selection.base.selection_factory._instantiate>`
+  - ```{autodoc2-docstring} src.policies.mandatory_selection.base.selection_factory._instantiate
+    :summary:
+    ```
+````
+
 ### Data
 
 ````{list-table}
 :class: autosummary longtable
 :align: left
 
+* - {py:obj}`logger <src.policies.mandatory_selection.base.selection_factory.logger>`
+  - ```{autodoc2-docstring} src.policies.mandatory_selection.base.selection_factory.logger
+    :summary:
+    ```
 * - {py:obj}`CONFIG_MAPPING <src.policies.mandatory_selection.base.selection_factory.CONFIG_MAPPING>`
   - ```{autodoc2-docstring} src.policies.mandatory_selection.base.selection_factory.CONFIG_MAPPING
     :summary:
@@ -34,6 +50,23 @@
 ````
 
 ### API
+
+````{py:data} logger
+:canonical: src.policies.mandatory_selection.base.selection_factory.logger
+:value: >
+   'getLogger(...)'
+
+```{autodoc2-docstring} src.policies.mandatory_selection.base.selection_factory.logger
+```
+
+````
+
+````{py:function} _instantiate(strategy_cls: typing.Any, kwargs: dict, name: str) -> typing.Any
+:canonical: src.policies.mandatory_selection.base.selection_factory._instantiate
+
+```{autodoc2-docstring} src.policies.mandatory_selection.base.selection_factory._instantiate
+```
+````
 
 ````{py:data} CONFIG_MAPPING
 :canonical: src.policies.mandatory_selection.base.selection_factory.CONFIG_MAPPING
